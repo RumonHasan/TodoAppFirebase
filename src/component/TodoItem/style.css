@@ -1,0 +1,128 @@
+:root{
+  --menuBg: linear-gradient(#dde3ea, #c6c7cf);
+}
+#checkbox {
+  width: 15px;
+  height: 15px;
+}
+
+.todoitem-container{
+  display: flex;
+  background: transparent;
+  max-width: 100%;
+  height: 70px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  border-radius: 5px;
+  border-bottom: 2px solid rgb(59, 59, 202);
+  opacity: 1;
+  width: 100%;
+}
+
+.todoitem-container.highlight{
+  border-bottom: 2px solid rgb(152, 218, 244);
+  transition: 850ms;
+}
+
+.todoitem-content{
+  display: flex;
+  color: white;
+  justify-content: space-between;
+  width: 100%;
+  padding: 10px;
+}
+
+
+
+/* todoitem data*/
+.todoitem-data{
+  display: flex;
+  margin-top: 10px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  flex-direction: column;
+}
+
+.todoitem-headers{
+  display: flex;
+}
+
+.todoitem-project{
+  margin-left: 20px;
+  margin-top: 10px;
+}
+
+.todoitem-projectname{
+  opacity: 0.2;
+  margin-left: 10px;
+  font-size: 10px;
+}
+
+.todo-item-btns{
+  display: flex;
+  margin: 5px;
+  visibility: none;
+  transform: scale(0);
+  transition: 850ms;
+}
+
+.todo-item-btns.show{
+  visibility: visible;
+  transform: scale(1);
+}
+
+
+.todoitem-data p{
+  font-size: 20px;
+  margin-left: 15px;
+}
+
+.check-btn{
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  font-size: 23px;
+  border: 2px solid rgb(59, 59, 202);
+  cursor: pointer;
+  background: transparent;
+  color:rgb(152, 218, 244);
+}
+
+.delete-btn{
+  background: transparent;
+  font-size: 27px;
+  border: none;
+  color: rgb(255, 136, 136);
+  margin-right: 10px;
+  margin-top: 10px;
+}
+
+.delete-btn:hover{
+  transition: 850ms;
+  color: rgb(229, 71, 71);
+}
+
+.edit-btn{
+  background: transparent;
+  font-size: 27px;
+  border: none;
+  color: rgb(76, 193, 158);
+  margin-right: 10px;
+  margin-top: 10px;
+}
+
+.edit-btn:hover{
+  transition: 850ms;
+  color: rgb(16, 144, 16);
+}
+
+/*buttons*/
+.delete-btn{
+  cursor: pointer;
+}
+
+.edit-btn{
+  cursor: pointer;
+}
+
+

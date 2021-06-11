@@ -1,0 +1,200 @@
+
+
+.addtodo-wrapper{
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: grid;
+    place-items: center;
+    visibility: hidden;
+    transform: scale(0);
+    transition: 0.3s ease-in-out;
+    z-index: 100;
+}
+
+.addtodo-wrapper.show{
+    visibility: visible;
+    transform:scale(1);
+}
+
+.addtodo-container{
+    width: 100%;
+    background:  #00094a;
+    padding: 10px;
+    max-width: 1170px;
+    border-bottom-right-radius: 30px ;
+    border-bottom-left-radius: 30px;
+    width: 400px;
+    height: 250px;
+    border-radius: 10px;
+    border: 2px solid rgb(59, 59, 202);
+    display: flex;
+    flex-direction: column;
+}
+
+/*  add todo headers */
+.addtodo-headers{
+    display: flex;
+    justify-content: space-between;
+    height: 20%;
+    position: relative;
+}
+
+.addtodo-title{
+    color: rgba(255, 255, 255, 0.759);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+}
+
+/*form designs*/
+form{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    height: 75%;
+    margin-bottom: 40px;
+}
+.close-todo-btn{
+    font-size: 25px;
+    position: absolute;
+    right: 0;
+    top: 0px;
+    background: transparent;
+    outline: none !important;
+    border: none;
+    cursor: pointer;
+    color:rgba(255, 255, 255, 0.355)
+}
+.close-todo-btn:hover{
+    transition: 0.3s ease-in-out;
+    color:rgba(255, 255, 255, 0.759);
+    transform: scale(1.04);
+}
+/*Form inputs */
+
+.title{
+    border:2px solid rgb(59, 59, 202);
+    background: transparent;
+    width: 40%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 5px;
+    border-radius: 5px;
+    outline: none !important;
+    color:rgba(255, 255, 255, 0.759);
+}
+.title:hover{
+    border:2px solid rgb(90, 144, 253);
+    transition: 850ms;
+    cursor: text;
+}
+
+.details{
+    border:2px solid rgb(59, 59, 202);
+    position: absolute;
+    top: 35px;
+    left: 0;
+    padding: 5px;
+    background: transparent;
+    border-radius: 5px;
+    color: rgba(255, 255, 255, 0.759);
+    outline: none !important;
+    width: 385px;
+    height: 120px;
+}
+
+.details:hover{
+    border:2px solid rgb(90, 144, 253);
+    transition: 850ms;
+    cursor: text;
+}
+
+select{
+    background: transparent;
+    border: 2px solid rgba(129, 10, 129, 0.909);
+    border-radius: 5px;
+    position: absolute;
+    bottom: -23px;
+    left: 0;
+    margin: 10px;
+    height: 33px;
+    color: rgba(225, 187, 255, 0.759);
+    cursor: pointer;
+    outline: none !important;
+}
+
+select:hover{
+    border:2px solid rgba(225, 187, 255, 0.759);
+    transition: 850ms;
+    cursor: pointer;
+    background: rgb(83, 42, 83);
+    color: rgba(234, 213, 249, 0.759)
+}
+
+.date-picker{
+    position: absolute;
+    bottom:-12px;
+    left: 155px;
+    height: 28px;
+    width: 120px;
+    border: 2px solid rgb(40, 151, 40);
+    background: transparent;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    outline: none !important;
+}
+.date-picker:hover{
+    transition: 850ms;
+    background: rgb(41, 132, 41);
+    color:rgb(126, 219, 126);
+    border: 2px solid rgb(105, 233, 105);
+}
+
+.time-picker{
+    position: absolute;
+    bottom:-12px;
+    left: 285px;
+    height: 28px;
+    width: 100px;
+    border: 2px solid rgb(40, 151, 40);
+    background: transparent;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    outline: none !important;
+}
+
+.time-picker:hover{
+    transition: 850ms;
+    background: rgb(41, 132, 41);
+    color:rgb(126, 219, 126);
+    border: 2px solid rgb(105, 233, 105);
+}
+
+
+/*submit button */
+
+.addtodo-btn{
+    cursor: pointer;
+    background: transparent;
+    border: 2px solid rgb(29, 87, 244);
+    width: 20%;
+    height: 40px;
+    padding: 2px;
+    border-radius: 5px;
+    color:rgb(90, 144, 253);
+}
+
+.addtodo-btn:hover{
+    transition: 850ms;
+    cursor: pointer;
+    color:rgba(204, 220, 255, 0.841);
+    background:rgba(12, 88, 239, 0.697);
+    border: 2px solid rgb(90, 144, 253);
+}
+

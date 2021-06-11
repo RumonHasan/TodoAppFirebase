@@ -1,0 +1,42 @@
+.project-alert-container{
+    width: 100vw;
+    min-height: 50px;
+    top: 0;
+    background: transparent;
+    overflow-x: hidden;
+    z-index: 30;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    transition: 500ms;
+    margin-top: -100%;
+}
+.project-alert-container.show{
+    margin-top: 0;
+}
+
+.project-alert{
+    width: 300px;
+    height: 40px;
+    background: rgb(14, 52, 129);
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-bottom: 2px solid rgb(100, 152, 255);
+    opacity: 0.8;
+}
+
+.project-alert-text.success{
+    text-align: center;
+    color: rgb(135, 248, 135);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.project-alert-text.danger{
+    text-align: center;
+    color: rgb(248, 135, 135);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    margin-top: 10px;
+}

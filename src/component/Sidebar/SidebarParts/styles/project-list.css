@@ -1,0 +1,81 @@
+.project-list-container{
+    margin-top: 10px;
+}
+
+.project-list{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    border: 2px solid rgb(4, 53, 188);
+    padding: 5px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.project-list:hover{
+    transition: 850ms;
+    border: 2px solid rgb(160, 190, 246);
+    background: rgb(12, 45, 137);
+}
+
+.project-list-btn{
+    display: flex;
+}
+
+.project{
+    margin: 10px;
+    font-size: 15px;
+    color: rgb(160, 190, 246);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    
+}
+
+.project-edit-btn{
+    background: rgb(36, 105, 39);
+    border: 2px solid rgb(88, 255, 185);
+    border-radius: 5px;
+    padding: 5px;
+    color: rgb(77, 229, 171);
+    cursor: pointer;
+    height: 37px;
+    width: 35px;
+    margin-right: 5px;
+}
+
+.project-edit-btn:hover{
+    transition: 850ms;
+    transform: scale(1.03);
+}
+
+.project-arrow-btn{
+    background: rgb(52, 53, 151);
+    border: 2px solid rgba(40, 87, 161, 0.848);
+    border-radius: 50%;
+    padding: 5px;
+    color: rgb(111, 136, 146);
+    cursor: pointer;
+    height: 37px;
+    width: 35px;
+    margin-right: 5px;
+}
+
+.project-arrow-btn:hover{
+    transition: 850ms;
+    transform:scale(1.03);
+    border: 2px solid rgba(137, 173, 231, 0.848);
+    color: rgb(161, 188, 198);
+}
+
+.project-timestamp{
+    color: white;
+    opacity: 0.25;
+    font-size: 15px;
+    margin-top: 25px;
+}
+
+/*project list color selection*/
+.project-list.highlight{
+    transition: 850ms;
+    border: 2px solid rgb(112, 171, 248);
+}

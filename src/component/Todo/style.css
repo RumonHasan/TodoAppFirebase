@@ -1,0 +1,268 @@
+.todo-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    
+}
+
+.todo-section{
+    border-radius: 20px;
+    width: 100vw;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    transition: 850ms;
+    margin-top: 30px;
+    max-width: 1170px;
+    overflow-y: auto;
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background: rgba(23, 29, 147, 0.8); 
+}
+::-webkit-scrollbar-thumb:window-inactive {
+    background: rgb(11, 24, 98); 
+}
+
+.todo-project-title{
+    font-size: 30px;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.801);
+    opacity: 0.7;
+    margin-top: 10px;
+}
+
+.todo-box{
+    width: 60%;
+    max-width: 60%;
+    position: relative;
+}
+
+.todo-project-title.filtername:hover{
+    transition: 500ms ease-in-out;
+    background: rgba(255, 255, 255, 0.122);
+    border-radius: 7px;
+    padding: 5px;
+}
+
+
+/* add task project design */
+.add-task-project{
+    margin-top: 20px;
+    display: flex;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.add-task-project-btn{
+    margin-right: 10px;
+    font-size: 25px;
+    background: transparent;
+    border: none;
+    color: rgba(54, 103, 215, 0.916);
+    cursor: pointer;
+}
+
+.add-task-project-btn:hover{
+    transition: 850ms;
+    transform: scale(1.02);
+    color: rgb(73, 166, 243);
+}
+
+.add-task-text{
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    opacity: 0.6;
+}
+
+/*add task input container*/
+.add-task-input-container{
+    margin-top: 20px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    height: 75%;
+    margin-bottom: 40px;
+}
+.close-todo-btn{
+    font-size: 25px;
+    position: absolute;
+    right: 0;
+    top: 0px;
+    background: transparent;
+    outline: none !important;
+    border: none;
+    cursor: pointer;
+    color:rgba(255, 255, 255, 0.355)
+}
+.close-todo-btn:hover{
+    transition: 0.3s ease-in-out;
+    color:rgba(255, 255, 255, 0.759);
+    transform: scale(1.04);
+}
+/*Form inputs */
+.add-task-input-container form{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    height: 75%;
+    margin-bottom: 40px;
+}
+
+.add-task-title{
+    border:2px solid rgb(59, 59, 202);
+    background: transparent;
+    position: absolute;
+    width: 40%;
+    top: 0;
+    left: 0;
+    padding: 5px;
+    border-radius: 5px;
+    outline: none !important;
+    color:rgba(255, 255, 255, 0.759);
+}
+.add-task-title:hover{
+    border:2px solid rgb(90, 144, 253);
+    transition: 850ms;
+    cursor: text;
+}
+
+.add-task-details{
+    border:2px solid rgb(59, 59, 202);
+    position: absolute;
+    top: 35px;
+    left: 0;
+    padding: 5px;
+    background: transparent;
+    border-radius: 5px;
+    color: rgba(255, 255, 255, 0.759);
+    outline: none !important;
+    width: 100%;
+    height: 120px;
+    
+}
+
+.add-task-details:hover{
+    border:2px solid rgb(90, 144, 253);
+    transition: 850ms;
+    cursor: text;
+}
+/* date and time pickers*/
+.add-task-date-picker{
+    position: absolute;
+    bottom:-120px;
+    left: 120px;
+    height: 28px;
+    width: 100%;
+    border: 2px solid rgb(40, 151, 40);
+    background: transparent;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    outline: none !important;
+    max-width: 100px;
+}
+.add-task-date-picker:hover{
+    transition: 850ms;
+    background: rgb(41, 132, 41);
+    color:rgb(126, 219, 126);
+    border: 2px solid rgb(105, 233, 105);
+}
+
+.add-task-time-picker{
+    position: absolute;
+    bottom:-120px;
+    left: 10px;
+    height: 28px;
+    width: 100%;
+    border: 2px solid rgb(40, 151, 40);
+    background: transparent;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    outline: none !important;
+    max-width: 100px;
+}
+
+.add-task-time-picker:hover{
+    transition: 850ms;
+    background: rgb(41, 132, 41);
+    color:rgb(126, 219, 126);
+    border: 2px solid rgb(105, 233, 105);
+}
+
+/* select project name*/
+.select-projectname{
+    background: transparent;
+    border: 2px solid rgba(129, 10, 129, 0.909);
+    border-radius: 5px;
+    position: absolute;
+    bottom: -130px;
+    left: 220px;
+    margin: 10px;
+    height: 33px;
+    color: rgba(225, 187, 255, 0.759);
+    cursor: pointer;
+    outline: none !important;
+}
+
+/* task buttons*/
+.task-btns{
+    position: absolute;
+    bottom: -165px;
+}
+
+.add-task-btn{
+    cursor: pointer;
+    margin-right: 5px;
+    padding: 5px;
+    border: 2px solid rgb(29, 87, 244);
+    background: transparent;
+    border-radius: 5px;
+    color: rgba(255, 255, 255, 0.642);   
+}
+
+.add-task-btn:hover{
+    transition: 850ms;
+    cursor: pointer;
+    color:rgba(204, 220, 255, 0.841);
+    background:rgba(12, 88, 239, 0.697);
+    border: 2px solid rgb(90, 144, 253);
+}
+
+.cancel-add-task-btn{
+    cursor: pointer;
+    margin-right: 5px;
+    padding: 5px;
+    border: 2px solid rgb(255, 96, 96);
+    background: transparent;
+    border-radius: 5px;
+    color: rgba(255, 101, 101, 0.642); 
+}
+
+.cancel-add-task-btn:hover{
+    transition: 850ms;
+    cursor: pointer;
+    color:rgb(243, 160, 160);
+    background:rgba(173, 62, 62, 0.985);
+    border: 2px solid rgb(253, 106, 90);
+}
+

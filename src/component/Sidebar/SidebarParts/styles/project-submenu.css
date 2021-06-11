@@ -1,0 +1,107 @@
+.project-submenu-container{
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: grid;
+    place-items: center;
+    visibility: hidden;
+    transform: scale(0);
+    transition: 0.3s ease-in-out;
+    z-index: 100;
+}
+.project-submenu-container.show{
+    visibility: visible;
+    transform: scale(1);
+}
+
+.project-options{
+    border: 2px solid rgb(61, 94, 243);
+    height: 250px;
+    border-radius: 10px;
+    width: 200px;
+    background: rgb(4, 26, 103);
+    opacity: 0.5;
+    cursor: pointer;
+    transition: 850ms;
+}
+
+.project-options:hover{
+    transition: 850ms;
+    opacity: 1;
+}
+
+.project-submenu-headers{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.project-btns{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+    margin-top: 10px;
+}
+
+.project-text{
+    color: white;
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    letter-spacing: 0.1;
+}
+
+.project-close-btn {
+    font-size: 23px;
+    background: transparent;
+    outline: none !important;
+    border: none;
+    cursor: pointer;
+    color:rgba(255, 255, 255, 0.355);
+}
+
+.project-close-btn:hover{
+    transition: 0.3s ease-in-out;
+    color:rgba(255, 255, 255, 0.759);
+    transform: scale(1.04);
+}
+
+.delete-project-btn{
+    background: transparent;
+    border: 2px solid rgb(233, 107, 107);
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 5px;
+    color: rgb(251, 76, 76);
+    margin-bottom: 10px;
+    height: 40px;
+}
+
+.delete-project-btn:hover{
+    transition: 850ms;
+    border: 2px solid rgb(234, 137, 137);
+    color:rgb(251, 76, 76);
+    background: rgb(147, 45, 45);
+}
+
+.edit-project-btn{
+    background: transparent;
+    border: 2px solid rgb(107, 233, 113);
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 5px;
+    color: rgb(64, 203, 71);
+    margin-bottom: 10px;
+    height: 40px;
+}
+
+.edit-project-btn:hover{
+    transition: 850ms;
+    border: 2px solid rgb(152, 244, 162);
+    color:rgb(59, 195, 82);
+    background: rgb(43, 107, 57);
+}
+

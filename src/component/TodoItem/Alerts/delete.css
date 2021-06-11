@@ -1,0 +1,77 @@
+.delete-container{
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: grid;
+    place-items: center;
+    visibility: hidden;
+    transform: scale(0);
+    transition: 0.3s ease-in-out;
+    z-index: 30;
+}
+
+.delete-container.show{
+    transform: scale(1);
+    visibility: visible;
+}
+
+.delete-alert{
+    border:none;
+    margin-right: 10px;
+    background: transparent;
+    border: 2px solid rgb(233, 107, 107);
+    padding: 4px;
+    border-radius:10px;
+    color: rgba(255, 255, 255, 0.738);
+}
+
+.delete-alert:hover{
+    transition: 0.3s ease-in-out;
+    background: rgb(244, 81, 81);
+    color: white;
+    cursor: pointer;
+}
+
+
+.cancel-alert{
+    border:none;
+    margin-right: 10px;
+    background: transparent;
+    border: 2px solid rgb(59, 59, 202);
+    padding: 4px;
+    border-radius:10px;
+    color: rgba(255, 255, 255, 0.738);
+}
+
+.cancel-alert:hover{
+    transition: 0.3s ease-in-out;
+    background: rgb(102, 91, 255);
+    color: white;
+    cursor:pointer;
+}
+
+.alert-wrapper{
+    width: 100%;
+    background: #00094a;
+    padding: 10px;
+    max-width: 1170px;
+    border-bottom-right-radius: 30px ;
+    border-bottom-left-radius: 30px;
+    width: 300px;
+    height: 100px;
+    border-radius: 5px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid rgb(59, 59, 202);
+}
+
+.alert-btns{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}

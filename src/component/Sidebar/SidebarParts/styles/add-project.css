@@ -1,0 +1,138 @@
+.add-project-container{
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: grid;
+    place-items: center;
+    visibility: hidden;
+    transform: scale(0);
+    transition: 0.3s ease-in-out;
+    z-index: 100;
+}
+
+.add-project-container.show{
+    visibility: visible;
+    transform: scale(1);
+}
+
+/* project box designs */
+
+.project-box{
+    width: 100%;
+    background:  #00094a;
+    padding: 10px;
+    max-width: 1170px;
+    border-bottom-right-radius: 30px ;
+    border-bottom-left-radius: 30px;
+    width: 300px;
+    height: 150px;
+    border-radius: 10px;
+    border: 2px solid rgb(59, 59, 202);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.project-box-headers p{
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.759);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 10px;
+}
+
+.project-box-headers{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid rgb(59, 59, 202) ;
+}
+
+.close-project-btn{
+    font-size: 25px;
+    background: transparent;
+    outline: none !important;
+    border: none;
+    cursor: pointer;
+    color:rgba(255, 255, 255, 0.355)
+}
+
+.close-project-btn:hover{
+    transition: 0.3s ease-in-out;
+    color:rgba(255, 255, 255, 0.759);
+    transform: scale(1.04);
+}
+
+/*form designs */
+
+::-webkit-input-placeholder{
+    font-size: 15px;
+    text-align: center;
+}
+
+.add-project-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.input-project-name{
+    border: 2px solid rgb(59, 59, 202);
+    border-radius: 5px;
+    background: transparent;
+    font-size: 20px;
+    color:rgba(255, 255, 255, 0.759);
+    margin-top: 15px;
+    margin-bottom: 10px;
+    width: 180px;
+    outline: none !important;
+}
+
+.input-project-name:hover{
+    transition: 850ms;
+    border: 2px solid rgb(117, 117, 227);
+}
+
+.add-project-btns{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.add-project-btn{
+    margin-right: 10px;
+    background: transparent;
+    border: 2px solid rgb(59, 59, 202);
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 5px;
+    color: rgb(85, 85, 214);
+}
+
+.add-project-btn:hover{
+    transition: 850ms;
+    border: 2px solid rgb(115, 192, 254);
+    color:rgb(115, 192, 254);
+    background: rgb(59, 59, 202);
+}
+
+.cancel-add-btn{
+    margin-right: 10px;
+    background: transparent;
+    border: 2px solid rgb(233, 107, 107);
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 5px;
+    color: rgb(251, 76, 76);
+}
+
+.cancel-add-btn:hover{
+    transition: 850ms;
+    border: 2px solid rgb(234, 137, 137);
+    color:rgb(251, 76, 76);
+    background: rgb(95, 17, 17);
+}
+
+
+
